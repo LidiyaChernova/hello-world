@@ -56,3 +56,15 @@ for i in range(n):
         count = 1
         b +=1
         print(b, end=" ")
+
+# Задание 5 - passed
+# выводить индексы искомой цифры в строке
+lst = [int(i) for i in input().split()]
+x = int(input())
+for i in range(0, len(lst)):
+    if lst[i] == x:
+        print(i, end=" ")
+    elif lst[i] != x:
+        i += 1
+if x not in lst:
+    print('Отсутствует')
